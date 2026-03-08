@@ -1,0 +1,46 @@
+# Compilados
+bin/
+obj/
+Debug/
+Release/
+
+# Arquivos de usuário e configurações locais
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Pacotes NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Cache do NuGet
+.nuget/
+
+# Configurações do Rider/JetBrains
+.idea/
+
+# Arquivos do sistema (Windows, Mac, Linux)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*~
+
+# Testes e cobertura
+TestResult.xml
+*.coverage
+*.coveragexml
+
+# Publicações
+publish/

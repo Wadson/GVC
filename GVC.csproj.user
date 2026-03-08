@@ -17,7 +17,7 @@
     <Compile Update="CustomTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Infra\Database\FrmDatabaseSetup.cs">
+    <Compile Update="UI\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\FrmLogin.cs">

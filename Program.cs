@@ -30,18 +30,14 @@ namespace GVC
             // =============================
             // LOGIN
             // =============================
+
+
+
             using (var login = new FrmLogin())
             {
                 if (login.ShowDialog() != DialogResult.OK)
                     return;
             }
-
-
-
-
-
-
-
 
 
             // =============================
@@ -130,7 +126,7 @@ namespace GVC
             // =============================
             // TELA PRINCIPAL
             // =============================
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmTelaPrincipal());
         }
 
     }

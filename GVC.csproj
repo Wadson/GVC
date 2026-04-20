@@ -12,9 +12,9 @@
 		<StartupObject>GVC.Program</StartupObject>
 		<!-- Versões -->
 		
-		<AssemblyVersion>3.0.2.0</AssemblyVersion>
-		<FileVersion>3.0.2.0</FileVersion>
-		<Version>3.0.2</Version>
+		<AssemblyVersion>3.2.0.0</AssemblyVersion>
+		<FileVersion>3.2.0.0</FileVersion>
+		<Version>3.2.0</Version>
 		
 	</PropertyGroup>
 
@@ -34,6 +34,8 @@
 	  <None Remove="Infra\Conexao\appsettings.json" />
 	  <None Remove="Resources\FundoEssenciaRadiante.png" />
 	  <None Remove="Resources\FundoiConnect.png" />
+	  <None Remove="Resources\GVCLogoMarca.png" />
+	  <None Remove="Resources\GVCLogoVendas.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -42,13 +44,19 @@
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Infra\Conexao\appsettings.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\FundoEssenciaRadiante.png" />
 	  <EmbeddedResource Include="Resources\FundoiConnect.png" />
+	  <EmbeddedResource Include="Resources\GVCLogoMarca.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\GVCLogoVendas.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -82,10 +90,36 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Properties\Settings.Designer.cs">
 	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Settings.settings</DependentUpon>
+	  </Compile>
+	  <Compile Update="UI\FrmAtualizarPrecos.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmBasePreta.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmCadPromocoes.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmManutPromocao.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmTelaPrincipal.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmZoomImagem.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmPagamentoComissaoVendedor.cs">
+	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmFormacaoDePreco.cs">
 	    <SubType>Form</SubType>
@@ -103,9 +137,6 @@
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmCadVendedor.cs">
-	    <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Update="UI\FrmCalculadoraPreco.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmReports.cs">
@@ -206,6 +237,13 @@
 
 	<ItemGroup>
 	  <Folder Include="Relatorios\Extratos\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 </Project>

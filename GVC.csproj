@@ -12,22 +12,19 @@
 		<StartupObject>GVC.Program</StartupObject>
 		<!-- Versões -->
 		
-		<AssemblyVersion>3.2.0.0</AssemblyVersion>
-		<FileVersion>3.2.0.0</FileVersion>
-		<Version>3.2.0</Version>
+		<AssemblyVersion>4.1.4.0</AssemblyVersion>
+		<FileVersion>4.1.4.0</FileVersion>
+		<Version>4.1.4</Version>
 		
 	</PropertyGroup>
 
 	<ItemGroup>
 	  <Compile Remove="Logs\**" />
 	  <Compile Remove="Services\**" />
-	  <Compile Remove="UI\NovaPasta\**" />
 	  <EmbeddedResource Remove="Logs\**" />
 	  <EmbeddedResource Remove="Services\**" />
-	  <EmbeddedResource Remove="UI\NovaPasta\**" />
 	  <None Remove="Logs\**" />
 	  <None Remove="Services\**" />
-	  <None Remove="UI\NovaPasta\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -81,6 +78,7 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="QRCoder" Version="1.8.0" />
 		<PackageReference Include="QuestPDF" Version="2025.12.1" />
 
 		<!-- REPORTING -->
@@ -103,13 +101,28 @@
 	  <Compile Update="UI\FrmAtualizarPrecos.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
+	  <Compile Update="UI\Carnet\FrmGerenciarPromissoria.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\Carnet\FrmConfiguracaoPIX.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
 	  <Compile Update="UI\FrmBasePreta.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmCadPromocoes.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
+	  <Compile Update="UI\FrmContasAReceber.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
 	  <Compile Update="UI\FrmManutPromocao.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmPDVendas.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmRelatorioFaturamento.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmTelaPrincipal.cs">
@@ -139,9 +152,6 @@
 	  <Compile Update="UI\FrmCadVendedor.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
-	  <Compile Update="UI\FrmReports.cs">
-	    <SubType>Form</SubType>
-	  </Compile>
 	  <Compile Update="UI\FrmHistoricoProduto.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
@@ -158,9 +168,6 @@
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmManutMarca.cs">
-	    <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Update="UI\FrmPDV.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmRelatorioFinanceiro.cs">
@@ -188,9 +195,6 @@
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmPesquisarPreco.cs">
-	    <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Update="UI\FrmPrincipal.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmItensVenda.cs">

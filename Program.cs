@@ -27,18 +27,11 @@ namespace GVC
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // =============================
-            // LOGIN
-            // =============================
-
-
-
             using (var login = new FrmLogin())
             {
                 if (login.ShowDialog() != DialogResult.OK)
                     return;
             }
-
 
             // =============================
             // TESTE DE CONEXÃO SQL (TEMPORÁRIO)
@@ -50,19 +43,14 @@ namespace GVC
                 using var conn = Conexao.Conex();
                 conn.Open();
 
-                MessageBox.Show(
-                    "✅ Conexão com o SQL Server OK!",
-                    "Teste de Conexão",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                // ❌ REMOVIDO:
+                //MessageBox.Show("✅ Conexão com o SQL Server OK!", "Teste de Conexão",
+                //    MessageBoxButtons.OK, MessageBox.Information);
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(
-                    $"❌ SQL ERROR {ex.Number}\n\n{ex.Message}",
-                    "Falha na Conexão SQL",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                MessageBox.Show($"❌ SQL ERROR {ex.Number}\n\n{ex.Message}", "Falha na Conexão SQL",
+                    MessageBoxButtons.OK,MessageBoxIcon.Error);
 
                 return; // evita abrir o sistema com banco inacessível
             }
@@ -75,18 +63,7 @@ namespace GVC
                     MessageBoxIcon.Error);
 
                 return;
-            }
-            // =============================
-
-
-
-
-
-
-
-
-
-
+            }        
 
 
             // =============================

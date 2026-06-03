@@ -1,0 +1,24 @@
+ESTADO INICIAL (COM CADASTRO):
+├── Grid: 1 linha selecionada
+├── Campos: Desabilitados (somente leitura)
+├── Botões: NOVO, EDITAR, EXCLUIR ativos
+└── Botões: SALVAR, CANCELAR inativos
+
+AO CLICAR EM EDITAR:
+├── Campos: Habilitados para edição
+├── Botão SALVAR vira "ALTERAR"
+├── Botões: NOVO, EDITAR, EXCLUIR desativados
+└── Botões: SALVAR, CANCELAR ativados
+
+AO CLICAR EM NOVO:
+├── Campos: Limpos e habilitados
+├── Botão SALVAR vira "CADASTRAR"
+├── Seleção do grid removida
+└── Botões: SALVAR, CANCELAR ativos
+
+AO CLICAR EM EXCLUIR:
+├── Pergunta de confirmação
+├── Remove do banco
+├── Recarrega grid vazio
+├── Limpa campos
+└── Desativa EDITAR e EXCLUIR

@@ -1,0 +1,283 @@
+Form
+FrmFinanceiro
+
+ClientSize: 1180, 660
+MinimumSize: 1040, 620
+BackColor: 244, 247, 251
+FormBorderStyle: FixedSingle
+Cabeçalho
+pnlHeader
+
+Height: 64
+Dock: Top
+StateCommon.Color1: 14, 83, 168
+StateCommon.Color2: 26, 115, 232
+tlpTitulo
+
+BackgroundImage: vazio/null
+pnlCabecalho
+
+BackColor/StateCommon.Color1: Transparent
+Padding: 26, 10, 26, 8
+pictureBox1
+
+Location: 26, 10
+Size: 40, 40
+lblTitulo
+
+Dock: None
+Location: 78, 8
+Size: 500, 28
+Font: Segoe UI Semibold, 16, Bold
+ForeColor/ShortText.Color1: White
+TextH: Near
+lblSubTitulo
+
+Dock: None
+Location: 80, 36
+Size: 520, 22
+Font: Segoe UI, 9.5
+ForeColor/ShortText.Color1: 220, 235, 255
+TextH: Near
+Filtros
+Criar um Panel para conter os filtros:
+pnlFiltrosModernos
+
+Location: 16, 74
+Size: 1148, 72
+BackColor: White
+Padding: 14, 14, 14, 14
+Mover para dentro dele:
+lblPesquisarPor, cmbTipoPesquisa, lblStatusParcela, txtStatusParcela, pnlPeriodo, pnlCliente, btnPesquisar, btnLimpar.
+
+lblPesquisarPor
+
+Location: 14, 10
+cmbTipoPesquisa
+
+Location: 14, 31
+Size: 210, 28
+StateCommon.ComboBox.Back.Color1: White
+StateCommon.ComboBox.Border.Color1: 203, 213, 225
+StateCommon.ComboBox.Border.Color2: 203, 213, 225
+StateCommon.ComboBox.Border.Rounding: 8
+StateCommon.ComboBox.Border.Width: 1
+Font: Segoe UI, 9.25
+lblStatusParcela
+
+Location: 238, 10
+txtStatusParcela
+
+Location: 238, 31
+Size: 250, 28
+BackColor/StateCommon.Back.Color1: White
+Border.Color1: 203, 213, 225
+Border.Color2: 203, 213, 225
+Border.Rounding: 8
+Border.Width: 1
+Font: Segoe UI, 9.25
+Content.Padding: 10, 2, 10, 2
+pnlPeriodo
+
+Location: 502, 17
+Size: 270, 46
+StateCommon.Color1: White
+pnlCliente
+
+Location: 502, 5
+Size: 360, 62
+StateCommon.Color1: White
+txtNomeCliente
+
+Size: 342, 28
+mesmas bordas do txtStatusParcela
+Botões de filtro
+btnPesquisar
+
+Location: 878, 27
+Size: 120, 34
+CornerRoundingRadius: 8
+Back.Color1/Color2: 21, 101, 192
+Border.Color1/Color2: 21, 101, 192
+Border.Rounding: 8
+Text Color: White
+Font: Segoe UI Semibold, 9.25, Bold
+btnLimpar
+
+Location: 1006, 27
+Size: 108, 34
+CornerRoundingRadius: 8
+Back.Color1/Color2: White
+Border.Color1/Color2: 203, 213, 225
+Border.Rounding: 8
+Text Color: 52, 73, 94
+Font: Segoe UI Semibold, 9.25, Bold
+Cards Financeiros
+kryptonLabel5
+
+Location: 16, 154
+Size: 1148, 20
+Dock: None
+Text: Resumo Financeiro
+Font: Segoe UI Semibold, 10, Bold
+Color1: 44, 62, 80
+TextH: Near
+tableLayoutPanel1
+
+Location: 16, 178
+Size: 1148, 104
+ColumnCount: 3
+ColumnStyles: 33%, 33%, 34%
+RowCount: 1
+Dock: None
+Cards:
+pnlCardReceber, panel1, panel2
+
+BorderStyle: None
+BackColor: White
+Padding: 14, 12, 14, 12
+Margin: 6, 6, 6, 6
+Dock: Fill
+Layouts internos:
+tableLayoutPanel2, tableLayoutPanel3, tableLayoutPanel4
+
+ColumnCount: 2
+ColumnStyles: 32px, 100%
+RowCount: 2
+RowStyles: 34px, 100%
+Padding: 8, 4, 8, 6
+Dock: Fill
+Títulos dos cards:
+kryptonLabel1, kryptonLabel7, kryptonLabel9
+
+Font: Segoe UI Semibold, 9.25, Bold
+Color1: 100, 116, 139
+Valores:
+lblTotalContasReceber, lblTotalVencido, lblTotalSelecionado
+
+Dock: Fill
+Margin: 3, 0, 3, 0
+Font: Segoe UI Semibold, 15, Bold
+Color1: 15, 23, 42
+TextV: Center
+Ícones:
+iconPictureBox1
+
+IconColor: 21, 101, 192
+iconPictureBox2
+
+IconColor: 198, 40, 40
+iconPictureBox3
+
+IconColor: 0, 121, 107
+Grid
+tblGeral
+
+Location: 16, 292
+Size: aproximadamente 1148, 274
+ColumnCount: 1
+RowCount: 1
+Padding: 1
+BackColor: White
+dgvContasAReceber
+
+Dock: Fill
+BackgroundColor: White
+BorderStyle: None
+CellBorderStyle: SingleHorizontal
+ColumnHeadersBorderStyle: None
+RowHeadersVisible: False
+GridColor: 226, 232, 240
+ColumnHeadersHeight: 40
+RowTemplate.Height: 34
+EnableHeadersVisualStyles: False
+ColumnHeadersDefaultCellStyle.BackColor: 15, 76, 129
+ColumnHeadersDefaultCellStyle.ForeColor: White
+ColumnHeadersDefaultCellStyle.Font: Segoe UI Semibold, 9.5, Bold
+DefaultCellStyle.Font: Segoe UI, 9.5
+DefaultCellStyle.BackColor: White
+DefaultCellStyle.ForeColor: 15, 23, 42
+DefaultCellStyle.SelectionBackColor: 219, 234, 254
+DefaultCellStyle.SelectionForeColor: 15, 23, 42
+AlternatingRowsDefaultCellStyle.BackColor: 248, 250, 252
+Coluna StatusParcela
+
+Width: 128
+Coluna Saldo
+
+Width: 118
+HeaderText: SALDO A PAGAR
+Barra de totais inferior
+Criar Panel:
+pnlBarraTotais
+
+Location: 16, 572
+Size: 1148, 38
+BackColor: 30, 41, 59
+Padding: 16, 8, 16, 8
+Criar 3 labels dentro:
+lblBarraTotalReceber, lblBarraTotalVencido, lblBarraTotalSelecionado
+
+Dock: Right
+Width: 250
+ForeColor: White
+Font: Segoe UI Semibold, 10, Bold
+TextAlign: MiddleRight
+Textos iniciais:
+
+A receber: R$ 0,00
+Vencido: R$ 0,00
+Selecionado: R$ 0,00
+Barra de botões inferior
+flowLayoutPanel1
+
+Dock: Bottom
+Height: 48
+BackColor: White
+Padding: 12, 6, 12, 6
+FlowDirection: RightToLeft
+Botões:
+btnBaixar
+
+Size: 118, 34
+Back: 0, 121, 107
+Text: White
+btnEstornarPgto
+
+Size: 118, 34
+Back: 183, 28, 28
+Text: White
+btnEmitirExtrato
+
+Size: 112, 34
+Back: 37, 99, 235
+Text: White
+btnEmitirRecibo
+
+Size: 112, 34
+Back: 67, 56, 202
+Text: White
+btnVerItensDaVenda
+
+Size: 112, 34
+Back: White
+Border: 203, 213, 225
+Text: 37, 99, 235
+btnPgtoDaParcela
+
+Size: 150, 34
+Back: White
+Border: 203, 213, 225
+Text: 37, 99, 235
+btnSair
+
+Size: 96, 34
+Back: White
+Border: 203, 213, 225
+Text: 71, 85, 105
+Para todos os botões principais:
+
+CornerRoundingRadius: 8
+Border.Rounding: 8
+Border.Width: 1
+Font: Segoe UI Semibold, 9.25, Bold

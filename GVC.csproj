@@ -12,9 +12,9 @@
 		<StartupObject>GVC.Program</StartupObject>
 		<!-- Versões -->
 		
-		<AssemblyVersion>4.1.4.0</AssemblyVersion>
-		<FileVersion>4.1.4.0</FileVersion>
-		<Version>4.1.4</Version>
+		<AssemblyVersion>4.2.0.0</AssemblyVersion>
+		<FileVersion>4.2.0.0</FileVersion>
+		<Version>4.2.0</Version>
 		
 	</PropertyGroup>
 
@@ -119,7 +119,7 @@
 	  <Compile Update="UI\FrmManutPromocao.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
-	  <Compile Update="UI\FrmPDVendas.cs">
+	  <Compile Update="UI\FrmPDV.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmRelatorioFaturamento.cs">
@@ -183,9 +183,6 @@
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmCadFormaPgto.cs">
-	    <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Update="UI\FrmFinanceiro.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmBase.cs">

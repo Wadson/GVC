@@ -116,6 +116,9 @@
 	  <Compile Update="UI\FrmContasAReceber.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
+	  <Compile Update="UI\FrmLoginModerno.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
 	  <Compile Update="UI\FrmManutPromocao.cs">
 	    <SubType>Form</SubType>
 	  </Compile>

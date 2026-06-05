@@ -27,7 +27,7 @@ namespace GVC
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            using (var login = new FrmLogin())
+            using (var login = new FrmLoginModerno())
             {
                 if (login.ShowDialog() != DialogResult.OK)
                     return;

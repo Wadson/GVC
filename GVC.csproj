@@ -12,9 +12,9 @@
 		<StartupObject>GVC.Program</StartupObject>
 		<!-- Versões -->
 		
-		<AssemblyVersion>4.2.0.0</AssemblyVersion>
-		<FileVersion>4.2.0.0</FileVersion>
-		<Version>4.2.0</Version>
+		<AssemblyVersion>5.1.0.0</AssemblyVersion>
+		<FileVersion>5.1.0.0</FileVersion>
+		<Version>5.1.0</Version>
 		
 	</PropertyGroup>
 
@@ -105,6 +105,9 @@
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\Carnet\FrmConfiguracaoPIX.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\FrmTelaPrincipalModerna.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmBasePreta.cs">
@@ -236,6 +239,9 @@
 	  <None Update="Properties\Settings.settings">
 	    <Generator>SettingsSingleFileGenerator</Generator>
 	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="Resources\LogoEssenciaRadianteModerno.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>
 

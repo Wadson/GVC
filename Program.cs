@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 using GVC.Infra.Conexao;
 using System.Reflection;
+using GVC.UTIL;
 
 namespace GVC
 {
@@ -103,7 +104,7 @@ namespace GVC
             // =============================
             // TELA PRINCIPAL
             // =============================
-            Application.Run(new FrmTelaPrincipal());
+            Application.Run(new FrmTelaPrincipalModerna());
         }
 
     }

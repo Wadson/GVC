@@ -104,5 +104,8 @@
     <Compile Update="UI\UserControlDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UI\UserControlOpcaoModerna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

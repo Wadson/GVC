@@ -107,6 +107,9 @@
 	  <Compile Update="UI\Carnet\FrmConfiguracaoPIX.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
+	  <Compile Update="UI\FrmTelaPrincipalModern.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
 	  <Compile Update="UI\FrmTelaPrincipalModerna.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
@@ -232,6 +235,9 @@
 	  </Compile>
 	  <Compile Update="UI\FrmRelatoriosFinanceiros.cs">
 	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="UI\UserControlBotaoModerno.cs">
+	    <SubType>UserControl</SubType>
 	  </Compile>
 	</ItemGroup>
 

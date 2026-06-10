@@ -104,7 +104,7 @@ namespace GVC
             // =============================
             // TELA PRINCIPAL
             // =============================
-            Application.Run(new FrmTelaPrincipalModerna());
+            Application.Run(new FrmTelaPrincipalModern());
         }
 
     }

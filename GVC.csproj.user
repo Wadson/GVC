@@ -20,6 +20,9 @@
     <Compile Update="UI\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\ControlesPersonalizados\PanelModerno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UI\FrmRecuperarSenhaOffline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,10 +104,13 @@
     <Compile Update="UI\Sobre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UI\UserControlDashboard.cs">
+    <Compile Update="UI\ControlesPersonalizados\Cards.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UI\UserControlOpcaoModerna.cs">
+    <Compile Update="UI\ControlesPersonalizados\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\ControlesPersonalizados\OpcaoModerna.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

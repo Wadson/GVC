@@ -12,9 +12,9 @@
 		<StartupObject>GVC.Program</StartupObject>
 		<!-- Versões -->
 		
-		<AssemblyVersion>5.1.0.0</AssemblyVersion>
-		<FileVersion>5.1.0.0</FileVersion>
-		<Version>5.1.0</Version>
+		<AssemblyVersion>5.2.0.0</AssemblyVersion>
+		<FileVersion>5.2.0.0</FileVersion>
+		<Version>5.2.0</Version>
 		
 	</PropertyGroup>
 
@@ -98,6 +98,9 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Settings.settings</DependentUpon>
 	  </Compile>
+	  <Compile Update="UI\ControlesPersonalizados\CardsInformacao.cs">
+	    <SubType>UserControl</SubType>
+	  </Compile>
 	  <Compile Update="UI\FrmAtualizarPrecos.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
@@ -132,9 +135,6 @@
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmRelatorioFaturamento.cs">
-	    <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Update="UI\FrmTelaPrincipal.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
 	  <Compile Update="UI\FrmZoomImagem.cs">
@@ -236,9 +236,10 @@
 	  <Compile Update="UI\FrmRelatoriosFinanceiros.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
-	  <Compile Update="UI\UserControlBotaoModerno.cs">
+	  <Compile Update="UI\ControlesPersonalizados\BotaoModerno.cs">
 	    <SubType>UserControl</SubType>
 	  </Compile>
+	  <Compile Update="UI\ControlesPersonalizados\Cards.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
